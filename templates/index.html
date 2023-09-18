@@ -17,27 +17,27 @@
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="advertisement-post.html">
+    <a class="nav-link" href="{% url 'advertisement-post.html' %}">
       <span style="font-weight: bold;">Разместить объявление</span>
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="register.html">
+    <a class="nav-link" href="{% url 'register.html' %}">
       <span style="font-weight: bold;">Регистрация</span>
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="login.html">
+    <a class="nav-link" href="{% url 'login.html' %}">
       <span style="font-weight: bold;">Войти</span>
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="profile.html">
+    <a class="nav-link" href="{% url 'profile.html' %}">
       <span style="font-weight: bold;">Профиль</span>
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">
+    <a class="nav-link" href="{% url '#' %}">
       <span style="font-weight: bold;">Выйти</span>
     </a>
   </li>
@@ -73,16 +73,16 @@
   <div class="row">
     <ul class="nav nav-tabs bg-white">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Проверенные продавцы</a>
+        <a class="nav-link active" aria-current="page" href="{% url '#' %}">Проверенные продавцы</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Новинки</a>
+        <a class="nav-link" href="{% url '#' %}">Новинки</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Избранное</a>
+        <a class="nav-link" href="{% url '#' %}">Избранное</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Еще что-нибудь</a>
+        <a class="nav-link disabled" href="{% url '#' %}" tabindex="-1" aria-disabled="true">Еще что-нибудь</a>
       </li>
     </ul>
     <form class="row g-3">
@@ -187,18 +187,18 @@
     <div class="collapse navbar-collapse" id="collapsibleNavId">
       <ul class="navbar-nav me-auto mt-2 mt-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" href="#" aria-current="page">сюда<span
+          <a class="nav-link active" href="{% url '#' %}" aria-current="page">сюда<span
                   class="visually-hidden">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">что</a>
+          <a class="nav-link" href="{% url '#' %}">что</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
+          <a class="nav-link dropdown-toggle" href="{% url '#' %}" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
              aria-expanded="false">хотите</a>
           <div class="dropdown-menu" aria-labelledby="dropdownId">
-            <a class="dropdown-item" href="#">например</a>
-            <a class="dropdown-item" href="#">ссылки на социальные сети</a>
+            <a class="dropdown-item" href="{% url '#' %}">например</a>
+            <a class="dropdown-item" href="{% url '#' %}">ссылки на социальные сети</a>
           </div>
         </li>
       </ul>
@@ -209,7 +209,4 @@
     </div>
   </nav>
 </footer>
-<a>
-  <img src="C:\H9ekoN\2023-07-11_11-35-41" alt="">
-</a>
 {% endblock %}
